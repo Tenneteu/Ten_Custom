@@ -1,0 +1,89 @@
+NShip = {
+	#MILITARY_POWER_SCALE = 0.2		#VANILLA
+	MILITARY_POWER_SCALE = 0.125	#NSC
+	#MILITARY_POWER_SCALE = 1600	#ACOT
+
+	#MILITARY_POWER_HEALTH_WEIGHT		= 0.0005 # Health power weight; Default: 0.5; ACOT: 0.000075
+	##MILITARY_POWER_ARMOR_WEIGHT         = 1    # compared to health
+	##MILITARY_POWER_SHIELD_WEIGHT        = 1    # compared to health
+	#MILITARY_POWER_DAMAGE_WEIGHT		= 0.5
+	#MILITARY_POWER_SCALE				= 22 # Multiplier for the formula; Default: 0.25; ACOT: 1600
+	#MILITARY_POWER_EXPONENT				= 0.65 # math: power = ( ( effective_health * damage_per_day ) ^ exponent ) * scale
+
+	FLEET_BASE_FORMATION_SCALE = 3	# vanilla = 2.0
+	FLEET_BASE_FORMATION_DIV = 7	# vanilla = 10
+	JUMP_DRIVE_WINDUP = 7	# Jump drive windup in days
+}
+
+NGraphics = {
+	SHIP_RANDOM_HEIGHT_OFFSET = 100	#15.0
+}
+
+NCombat = {
+	COMBAT_DETECT_RANGE_MULT				= 1.5	# Range to engage in combat with other ships is <fleets max attack range> * COMBAT_DETECT_RANGE_MULT
+	COMBAT_DETECT_RANGE_MIN					= 50
+}
+
+NGameplay = {
+	COMMAND_LIMIT_BASE = 50
+	COMMAND_LIMIT_MAX = 2000
+	NAVAL_CAPACITY_BASE = 50
+	EXPERIMENTAL_SUBSPACE_NAVIGATION_TIME_MULT = 1.5	# value * hyperlane distance to system defines the MIA time (travel time in days) for a Science Ship MIA Jump
+	LEADER_CAPACITY_BASE = 10
+	LEADER_BASE_SKILL_CAP = 20
+	LEADER_MAX_SKILL_CAP = 30
+	LEADER_POOL_SIZE = 10	# Each leader pool will consist of this many leaders
+	LEADER_POOL_LEAD_TIME = 5	# Years leaders will remain in the leader pool until replaced
+
+	LEADER_EXPERIENCE_REQUIREMENT_BASE_VALUE = 75 #125	# Base value when calculating required experience for next skill level
+	LEADER_EXPERIENCE_REQUIREMENT_SCALE_VALUE = 50 #75	# Scale factor when calculating required experience for next skill level
+
+	LEADER_SUBCLASS_CHOICE_LEVEL = 10 	# At what level you can pick your leader subclass
+	LEADER_DESTINY_CHOICE_LEVEL = 15 	# At what level you can pick your leader destiny trait
+	MAX_BASIC_TRAITS = 5 		# How many basic traits you can have before you only get the option to level them up
+	MAX_VETERAN_TRAITS = 5 		# How many veteran traits you can have before you only get the option to level them up
+
+	DEFAULT_TRAIT_OPTIONS_ON_LEVEL_UP	= 4 #2		# Default number of selectable trait options before modifiers available on level up
+	NUM_DESTINY_TRAIT_OPTIONS			= 4 #3		# Default number of destiny traits to select from
+
+	LEADER_SCIENTIST_LEADING_RESEARCH_FIELD_EXPERIENCE = 5	#3.5
+    LEADER_SCIENTIST_SUCCESSFUL_ANOMALY_RESEARCH_EXPERIENCE		= 100 #50	# Experience gained from a successful discovery research
+    LEADER_SCIENTIST_COMPLETED_SPECIAL_PROJECT_EXPERIENCE		= 500 #100	# Experience gained from completing a special project
+    LEADER_SCIENTIST_COMPLETED_ARCHAEOLOGICAL_SITE_STAGE_EXPERIENCE = 250 #75	# Experience gained from a successful archaeological site roll
+    LEADER_SCIENTIST_ASSIST_RESEARCH							= 0.5 #0.10	# Experience gained from assisting research per day
+
+	LEADER_ADMIRAL_FLEET_COMBAT_BASE_EXPERIENCE					= 10 #5 # Leader Admiral base experience from fleet combat
+
+	LEADER_RULER_MONARCH_EXPERIENCE								= 8.0 #5.0
+    LEADER_RULER_HEIR_EXPERIENCE								= 2.0 #1.0
+
+    LEADER_GOVERNOR_MONTHLY_EXPERIENCE							= 10 #5	# Monthy exp from governing sector.
+	LEADER_COUNCILOR_MONTHLY_EXPERIENCE							= 15 #5 # Monthly exp from being on the council
+
+	LEADER_AGE_DEATH_CHANCE_AGE = 100	#80			# Before this age the chance won't increase
+	#LEADER_AGE_DEATH_CHANCE_INC = 0.002			# Increase with these % for each year above CHANCE_AGE
+	LEADER_AGE_HIGH_DEATH_CHANCE_AGE = 120	#100		# Above this age, death chance increases drastically
+	#LEADER_AGE_HIGH_DEATH_CHANCE_INC = 0.02		# Increase with these % for each year above HIGH_DEATH_CHANCE_AGE
+
+	POLICY_YEARS = 0	# Years a set policy can not be changed for
+
+	BASE_ENVOYS_REGULAR_EMPIRE			= 3			# The starting number of envoys for regular empires
+
+    PLANET_COMBAT_WIDTH_BASE				= 20 # Maximum number of troops that can fight at the same time
+    PLANET_COMBAT_WIDTH_FROM_SIZE 			= 2 # Extra combat width per tile
+
+    REINFORCE_MIA_TIME_MULT = 0.1
+    LIMITED_EXPLORATION = 0		# If set to 1, only science ships with scientists can enter unvisited systems
+}
+
+NEconomy = {
+	FLEET_UPGRADE_TIME_COST_MULT = 0.05
+}
+
+NAI = {
+	NUM_TRADITIONS_FOR_EDICTS = 56	#112 # (5 traditions + adoption effect + completion effect) * 16
+}
+
+NInterface = {
+    FLEET_SIZE						= 500	# Fleets of this size of above is displayed with the special fleet overlay
+}

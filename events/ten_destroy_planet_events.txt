@@ -1,0 +1,63 @@
+namespace = ten_destroy_planet
+
+# CAnnihilatust
+country_event = {
+	id = ten_destroy_planet.1003
+	title = "ten_destroy_planet.1000.name"
+	picture = GFX_evt_planet_beam
+	desc = ten_destroy_planet.1003.desc
+	show_sound = event_super_explosion
+	location = event_target:ten_showered_planet
+	
+	is_triggered_only = yes
+
+	immediate = {	
+		event_target:ten_showered_planet = {
+			remove_planet_flag = final_word_underway			
+		}
+	}
+	
+	option = {
+		name = ten_destroy_planet.1003.a
+		custom_tooltip = ten_destroy_planet.1003.a.explain
+		hidden_effect = {	
+			event_target:ten_showered_planet = {
+				every_owned_pop = {
+                    add_resource = {
+                        unity = 500
+                    }
+					kill_pop = yes
+				}
+				remove_all_buildings = yes
+				reroll_deposits = yes
+				destroy_colony = yes
+				clear_planet_modifiers = yes
+				change_pc = pc_tomb
+			}
+		}
+	}
+
+	option = {
+		name = ten_destroy_planet.1003.b
+		custom_tooltip = ten_destroy_planet.1003.b.explain
+		hidden_effect = {	
+			event_target:ten_showered_planet = {
+				every_owned_pop = {
+					kill_pop = yes
+				}
+				remove_all_buildings = yes
+				destroy_colony = yes
+			}
+		}
+	}
+
+	option = {
+		name = ten_destroy_planet.1003.d
+		custom_tooltip = ten_destroy_planet.1003.d.explain
+		add_resource = {
+			influence = 5
+		}
+		hidden_effect = {			
+		}
+	}
+}

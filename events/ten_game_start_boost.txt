@@ -1,0 +1,228 @@
+namespace = ten_game_start_boost
+
+@start_resources_boost_1 = 50000
+@start_resources_boost_2 = 50000
+@start_resources_boost_3 = 50000
+
+@start_research_boost_1 = 1000000
+@start_research_boost_2 = 100000
+@start_research_boost_3 = 0
+
+# On Game Start (Get Host)
+country_event = {
+	id = giga_menu.0
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+		NOT = { has_global_flag = ten_has_host }
+	}
+
+	immediate = {
+		set_global_flag = ten_has_host
+		set_country_flag = ten_host
+	}
+}
+
+country_event = {
+	id = ten_game_start_boost.1
+	hide_window = no
+	is_triggered_only = yes
+    fire_only_once = yes
+	diplomatic = yes
+
+	trigger = { has_country_flag = giga_host }
+
+    title = ten_game_start_boost.name
+	desc = {
+	    text = ten_game_start_boost.desc
+	}
+
+	#immediate = {
+	#	add_resource = { unity = @start_unity }
+	#}
+    immediate = {
+		every_country = {
+			limit = { is_ai = no }
+			add_resource = { unity = 4000 }
+		}
+	}
+	option = { #Nothing
+	    name = ten_game_start_boost_1_option_1.desc
+	}
+	option = { #For AI & Players
+	    name = ten_game_start_boost_1_option_2.desc
+	    hidden_effect = { country_event = { id = ten_game_start_boost.10 } }
+	}
+	option = { #For Players
+	    name = ten_game_start_boost_1_option_3.desc
+	    allow = { always = no }
+	    #hidden_effect = { country_event = { id = ten_game_start_boost.11 } }
+	}
+	option = { #For AI
+	    name = ten_game_start_boost_1_option_4.desc
+	    allow = { always = no }
+	    #hidden_effect = { country_event = { id = ten_game_start_boost.12 } }
+	}
+}
+
+country_event = { # FOR AI & PLAYERS
+	id = ten_game_start_boost.10
+	hide_window = no
+	is_triggered_only = yes
+    fire_only_once = yes
+	diplomatic = yes
+
+	trigger = { has_country_flag = giga_host }
+
+    title = ten_game_start_boost.name
+	desc = {
+	    text = ten_game_start_boost_10.desc
+	}
+
+	option = { #For AI & Players
+	    name = ten_game_start_boost_1x_option_1.desc
+	    hidden_effect = {
+	        every_country = {
+                #limit = { is_ai = no }
+                country_event = { id = ten_game_start_boost.20 }
+            }
+	    }
+	}
+	option = { #For Players
+	    name = ten_game_start_boost_1x_option_2.desc
+	    allow = { always = no }
+	    hidden_effect = {
+	        every_country = {
+                #limit = { is_ai = no }
+                country_event = { id = ten_game_start_boost.21 }
+            }
+	    }
+	}
+	option = { #For Players
+	    name = ten_game_start_boost_1x_option_3.desc
+	    allow = { always = no }
+	    hidden_effect = {
+	        every_country = {
+                #limit = { is_ai = no }
+                country_event = { id = ten_game_start_boost.22 }
+            }
+	    }
+	}
+	option = { #Back
+	    name = ten_game_start_boost_option_back.desc
+	    hidden_effect = { country_event = { id = ten_game_start_boost.1 } }
+	}
+}
+
+country_event = {
+	id = ten_game_start_boost.20
+	hide_window = yes
+	is_triggered_only = yes
+    fire_only_once = no
+
+	#trigger = {
+	#	is_country_type = default
+    #    is_ai = no
+	#}
+
+	immediate = {
+        add_modifier = { modifier = ten_sm_start_boost_1		 days = -1 }
+
+		add_resource = {
+		    energy = @start_resources_boost_1
+		    minerals = @start_resources_boost_1
+            food = @start_resources_boost_1
+		    alloys = @start_resources_boost_1
+		    consumer_goods = @start_resources_boost_1
+		    unity = @start_resources_boost_1
+
+		    influence = 1000
+
+		    physics_research = @start_research_boost_1
+		    society_research = @start_research_boost_1
+		    engineering_research = @start_research_boost_1
+        }
+
+        country_resource_max_add = @start_resources_cap_boost_1
+        country_base_energy_produces_add = @start_resources_monthly_boost_1
+        country_base_minerals_produces_add = @start_resources_monthly_boost_1
+        country_base_food_produces_add = @start_resources_monthly_boost_1
+        country_base_alloys_produces_add = @start_resources_monthly_boost_1
+        country_base_consumer_goods_produces_add = @start_resources_monthly_boost_1
+        country_base_unity_produces_add = @start_resources_monthly_boost_1
+
+        country_base_physics_research_produces_add = @start_resources_monthly_boost_1
+        country_base_society_research_produces_add = @start_resources_monthly_boost_1
+        country_base_engineering_research_produces_add = @start_resources_monthly_boost_1
+	}
+}
+
+country_event = {
+	id = ten_game_start_boost.21
+	hide_window = yes
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#trigger = {
+	#	is_country_type = default
+    #    is_ai = no
+	#}
+
+	immediate = {
+		add_resource = {
+		    energy = @start_resources_boost_2
+		    minerals = @start_resources_boost_2
+            food = @start_resources_boost_2
+		    alloys = @start_resources_boost_2
+		    consumer_goods = @start_resources_boost_2
+		    unity = @start_resources_boost_2
+
+		    influence = 1000
+
+		    physics_research = @start_research_boost_2
+		    society_research = @start_research_boost_2
+		    engineering_research = @start_research_boost_2
+        }
+
+        country_resource_max_add = @start_resources_cap_boost_2
+        country_base_energy_produces_add = @start_resources_monthly_boost_2
+        country_base_minerals_produces_add = @start_resources_monthly_boost_2
+        country_base_food_produces_add = @start_resources_monthly_boost_2
+        country_base_alloys_produces_add = @start_resources_monthly_boost_2
+        country_base_consumer_goods_produces_add = @start_resources_monthly_boost_2
+        country_base_unity_produces_add = @start_resources_monthly_boost_2
+
+        country_base_physics_research_produces_add = @start_resources_monthly_boost_2
+        country_base_society_research_produces_add = @start_resources_monthly_boost_2
+        country_base_engineering_research_produces_add = @start_resources_monthly_boost_2
+	}
+}
+
+country_event = {
+	id = ten_game_start_boost.22
+	hide_window = yes
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#trigger = {
+	#	is_country_type = default
+    #    is_ai = no
+	#}
+
+	immediate = {
+		add_resource = { energy = @start_resources_boost_3 }
+		add_resource = { minerals = @start_resources_boost_3 }
+		add_resource = { food = @start_resources_boost_3 }
+		add_resource = { alloys = @start_resources_boost_3 }
+		add_resource = { consumer_goods = @start_resources_boost_3 }
+		add_resource = { unity = @start_resources_boost_3 }
+
+		add_resource = { influence = 1000 }
+
+		add_resource = { physics_research = @start_research_boost_3 }
+		add_resource = { society_research = @start_research_boost_3 }
+		add_resource = { engineering_research = @start_research_boost_3 }
+	}
+}

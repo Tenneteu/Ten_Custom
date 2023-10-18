@@ -1,0 +1,43 @@
+tr_est_mechanicum_5 = {
+    custom_tooltip = tr_est_mechanicum_5_desc
+    possible = {
+        has_tradition = tr_est_mechanicum_2
+        has_tradition = tr_est_mechanicum_3
+    }
+    modifier = {
+        ship_hull_regen_add_perc = 0.02
+        ship_armor_regen_add_perc = 0.02
+    }
+    tradition_swap = {
+        custom_tooltip = tr_est_mechanicum_5_robots_desc
+        name = tr_est_mechanicum_5_robots
+        inherit_icon = yes
+        inherit_name = yes
+        trigger = {
+            is_machine_empire = no
+            est_uses_robots = yes
+        }        modifier = {
+            ship_hull_regen_add_perc = 0.03
+            ship_armor_regen_add_perc = 0.03
+        }
+        weight = {
+            factor = 1
+        }
+    }
+    tradition_swap = {
+        name = tr_est_mechanicum_5_GC
+        trigger = {
+            is_machine_empire = yes
+        }
+        modifier = {
+            ship_hull_regen_add_perc = 0.05
+            ship_armor_regen_add_perc = 0.05
+        }
+        weight = {
+            factor = 1
+        }
+    }
+    ai_weight = {
+        factor = 5000
+    }
+}

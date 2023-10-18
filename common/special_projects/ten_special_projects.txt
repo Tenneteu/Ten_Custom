@@ -1,0 +1,33 @@
+
+special_project = {
+	key = "TEN_FINAL_WORD_PLANET"
+	days_to_research = 30
+	tech_department = society_technology
+	picture = GFX_evt_fleet_from_surface
+	timelimit = 360
+
+	event_scope = planet_event
+
+	requirements = {
+	}
+
+	abort_trigger = {
+	}
+	
+	on_success = {
+		save_event_target_as = ten_showered_planet
+		remove_planet_flag = ten_final_word_underway
+		space_owner = {
+			country_event = { id = ten_destroy_planet.1003 }				
+		}
+	}
+	
+	on_fail = {
+		from = {
+			remove_planet_flag = ten_showered_planet
+		}
+		add_resource = {
+			influence = 5
+		}
+	}
+}

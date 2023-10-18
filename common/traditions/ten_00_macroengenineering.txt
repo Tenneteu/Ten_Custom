@@ -1,0 +1,7 @@
+tr_macroengineering_finish = {
+	modifier = {
+		megastructure_build_speed_mult = 0.20
+		country_megastructure_build_cap_add = 1
+		ascension_perks_add = 1
+	}
+}

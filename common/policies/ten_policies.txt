@@ -1,0 +1,237 @@
+################
+### POLICIES ###
+################
+
+### TECH OPTIONS POLICY ###
+
+tech_options_policy = {
+	potential = {
+		is_country_type = default
+		is_ai = no
+	}
+	option = {
+		name = "defaulttech_option"
+		policy_flags = { defaulttech_option }
+	}
+	option = {
+		name = "tech5_option"
+		policy_flags = { tech5_option }
+		modifier = {
+			num_tech_alternatives_add = 5
+			country_physics_research_produces_mult = -0.10
+			country_society_research_produces_mult = -0.10
+			country_engineering_research_produces_mult = -0.10
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "tech10_option"
+		policy_flags = { tech10_option }
+		modifier = {
+			num_tech_alternatives_add = 10
+			country_physics_research_produces_mult = -0.15
+			country_society_research_produces_mult = -0.15
+			country_engineering_research_produces_mult = -0.15
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "tech15_option"
+		policy_flags = { tech15_option }
+		modifier = {
+			num_tech_alternatives_add = 15
+			country_physics_research_produces_mult = -0.20
+			country_society_research_produces_mult = -0.20
+			country_engineering_research_produces_mult = -0.20
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "tech20_option"
+		policy_flags = { tech20_option }
+		modifier = {
+			num_tech_alternatives_add = 20
+			country_physics_research_produces_mult = -0.30
+			country_society_research_produces_mult = -0.30
+			country_engineering_research_produces_mult = -0.30
+		}
+		ai_weight = { factor = 0 }
+	}
+}
+
+### Overflow OPTIONS POLICY ###
+
+overflow_hull_options_policy = {
+	potential = {
+		is_country_type = default
+		is_ai = no
+	}
+	option = {
+		name = "overflow_hull_default_option"
+		policy_flags = { defaulttech_option }
+	}
+	option = {
+		name = "overflow_hull_010_option"
+		policy_flags = { overflow_hull_default_option }
+		modifier = {
+			ship_hull_regen_add_perc = -0.01
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_hull_020_option"
+		policy_flags = { overflow_hull_020_option }
+		modifier = {
+			ship_hull_regen_add_perc = -0.02
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_hull_050_option"
+		policy_flags = { overflow_hull_050_option }
+		modifier = {
+			ship_hull_regen_add_perc = -0.05
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_hull_075_option"
+		policy_flags = { overflow_hull_075_option }
+		modifier = {
+			ship_hull_regen_add_perc = -0.075
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_hull_100_option"
+		policy_flags = { overflow_hull_100_option }
+		modifier = {
+			ship_hull_regen_add_perc = -0.1
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_hull_150_option"
+		policy_flags = { overflow_hull_150_option }
+		modifier = {
+			ship_hull_regen_add_perc = -0.15
+		}
+		ai_weight = { factor = 0 }
+	}
+}
+overflow_armor_options_policy = {
+	potential = {
+		is_country_type = default
+		is_ai = no
+	}
+	option = {
+		name = "overflow_armor_default_option"
+		policy_flags = { defaulttech_option }
+	}
+	option = {
+		name = "overflow_armor_default_option"
+		policy_flags = { overflow_armor_default_option }
+		modifier = {
+			ship_armor_regen_add_perc = -0.10
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_armor_020_option"
+		policy_flags = { overflow_armor_020_option }
+		modifier = {
+			ship_armor_regen_add_perc = -0.20
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_armor_050_option"
+		policy_flags = { overflow_armor_050_option }
+		modifier = {
+			ship_armor_regen_add_perc = -0.50
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_armor_075_option"
+		policy_flags = { overflow_armor_075_option }
+		modifier = {
+			ship_armor_regen_add_perc = -0.75
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_armor_100_option"
+		policy_flags = { overflow_armor_100_option }
+		modifier = {
+			ship_armor_regen_add_perc = -1.00
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_armor_150_option"
+		policy_flags = { overflow_armor_150_option }
+		modifier = {
+			ship_armor_regen_add_perc = -1.50
+		}
+		ai_weight = { factor = 0 }
+	}
+}
+overflow_shield_options_policy = {
+	potential = {
+		is_country_type = default
+		is_ai = no
+	}
+	option = {
+		name = "overflow_shield_default_option"
+		policy_flags = { defaulttech_option }
+	}
+	option = {
+		name = "overflow_shield_default_option"
+		policy_flags = { overflow_shield_default_option }
+		modifier = {
+			ship_shield_regen_add_perc = -0.10
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_shield_020_option"
+		policy_flags = { overflow_shield_020_option }
+		modifier = {
+			ship_shield_regen_add_perc = -0.20
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_shield_050_option"
+		policy_flags = { overflow_shield_050_option }
+		modifier = {
+			ship_shield_regen_add_perc = -0.50
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_shield_075_option"
+		policy_flags = { overflow_shield_075_option }
+		modifier = {
+			ship_shield_regen_add_perc = -0.75
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_shield_100_option"
+		policy_flags = { overflow_shield_100_option }
+		modifier = {
+			ship_shield_regen_add_perc = -1.00
+		}
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "overflow_shield_150_option"
+		policy_flags = { overflow_shield_150_option }
+		modifier = {
+			ship_shield_regen_add_perc = -1.50
+		}
+		ai_weight = { factor = 0 }
+	}
+}

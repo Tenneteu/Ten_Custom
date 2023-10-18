@@ -1,0 +1,130 @@
+ten_emergency_defenses = {
+    length = -1
+    icon = "GFX_edict_type_policy"
+
+    resources = {
+        category = campaigns
+        cost = {
+            influence = 30
+        }
+        upkeep = {
+            influence = 30
+        }
+    }
+
+	potential = {
+		is_ai = no
+	}
+
+    modifier = {
+	    #country_energy_produces_mult = -0.4
+		terraform_speed_mult = 2.0
+		planet_colony_development_speed_mult = 2.0
+	    planet_clear_blocker_speed_mult = 2.0
+		planet_building_build_speed_mult = 2.0
+		planet_decision_enact_speed_mult = 2.0
+	    megastructure_build_speed_mult = 2.0
+		starbase_module_build_speed_mult = 2.0
+		starbase_building_build_speed_mult = 2.0
+		starbase_upgrade_speed_mult = 2.0
+	    shipsize_military_station_small_build_speed_mult = 2.0
+	    shipsize_military_station_medium_build_speed_mult = 2.0
+	    shipsize_military_station_large_build_speed_mult = 2.0
+	    shipsize_ion_cannon_build_speed_mult = 2.0
+	    starbase_module_build_speed_mult = 2.0
+	    starbase_building_build_speed_mult = 2.0
+	    shipsize_xl_cannon_build_speed_mult = 2.0
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+ten_emergency_defenses_cheat = {
+    length = -1
+    icon = "GFX_edict_type_policy"
+
+    resources = {
+        category = campaigns
+        cost = {
+            influence = 100
+        }
+        upkeep = {
+            influence = 100
+        }
+    }
+
+	potential = {
+		is_ai = no
+	}
+
+    modifier = {
+	    #country_energy_produces_mult = -0.4
+		terraform_speed_mult = 10.0
+	    planet_clear_blocker_speed_mult = 10.0
+		planet_building_build_speed_mult = 10.0
+		planet_decision_enact_speed_mult = 10.0
+	    megastructure_build_speed_mult = 10.0
+		starbase_module_build_speed_mult = 10.0
+		starbase_building_build_speed_mult = 10.0
+		starbase_upgrade_speed_mult = 10.0
+	    shipsize_military_station_small_build_speed_mult = 10.0
+	    shipsize_military_station_medium_build_speed_mult = 10.0
+	    shipsize_military_station_large_build_speed_mult = 10.0
+	    shipsize_ion_cannon_build_speed_mult = 10.0
+	    shipsize_xl_cannon_build_speed_mult = 10.0
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+ten_edict_army = {
+    length = -1
+    icon = "GFX_edict_type_policy"
+
+    resources = {
+        category = edicts
+        upkeep = {
+            influence = 1
+        }
+    }
+
+	potential = {
+		is_ai = no
+	}
+
+    modifier = {
+		planet_resettlement_unemployed_mult = 3.0
+	    planet_army_build_speed_mult = 3.0
+		starbase_upgrade_speed_mult = 3.0
+		starbase_module_build_speed_mult = 3.0
+		starbase_building_build_speed_mult = 3.0
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+str_custom_menu = {
+	icon = "GFX_giga_menu_icon"
+	length = 0
+	resources = { category = edicts }
+	potential = {
+	    has_country_flag = giga_host
+	    is_ai = no
+    }
+	effect = { country_event = { id = str_menu.1 } }
+	ai_weight = { weight = 0 }
+}
+ten_giga_fix = {
+	icon = "GFX_giga_menu_icon"
+	length = 0
+	resources = { category = edicts }
+	potential = {
+	    has_country_flag = giga_host
+	    is_ai = no
+    }
+	effect = { giga_new_begin_ehof_fix = yes }
+	ai_weight = { weight = 0 }
+}

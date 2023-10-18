@@ -1,0 +1,75 @@
+##########################################################################
+# Empire edicts
+##########################################################################
+
+@Edict1Cost = 250
+@Edict2Cost = 500
+@Edict3Cost = 1000
+
+@EdictPerpetual = -1
+
+#################
+# Toggle Edicts
+#################
+architectonic_base = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict1Cost
+		}
+	}
+
+	modifier = {
+		planet_max_buildings_add = 4
+	}
+
+	ai_weight = {
+		weight = 200
+	}
+}
+
+architectonic_med = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict2Cost
+		}
+	}
+
+	modifier = {
+		planet_max_buildings_add = 6
+	}
+
+	ai_weight = {
+		weight = 350
+	}
+}
+
+architectonic_max = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = @Edict3Cost
+		}
+	}
+
+	modifier = {
+		planet_max_buildings_add = 10
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}

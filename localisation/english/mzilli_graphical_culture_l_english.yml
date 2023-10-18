@@ -1,0 +1,26 @@
+﻿l_english:
+
+decision_mzilli_graphical_culture:0 "Change Shipset"
+decision_mzilli_graphical_culture_desc:1 "Allows us to change the appearance of our ships and starbases. (Only works on NEW ones..)"
+decision_mzilli_graphical_culture_tooltip:0 "$decision_mzilli_graphical_culture_desc$"
+
+mzilli_graphical_culture.1.name:0 "Evolving Aesthetics"
+mzilli_graphical_culture.1.desc:0 "As the technology and culture of the [Root.GetName] continues to advance, the appearance of our starships inevitably shifts away from what it once was.\n\nPerhaps, in the interests of improving our image, we could influence our engineers toward certain design philosophies. Our existing fleets and starbases will retain their current look, but newly-built ones will reflect our new designs."
+
+mzilli_graphical_culture.1.none:0 "Our current aesthetic is perfectly servicable."
+mzilli_graphical_culture.1.none.tooltip:0 "Nothing changes."
+mzilli_graphical_culture.1.avi:0 "Avian Ships"
+mzilli_graphical_culture.1.art:0 "Arthropoid Ships"
+mzilli_graphical_culture.1.fun:0 "Fungoid Ships"
+mzilli_graphical_culture.1.hum:0 "Humanoid Ships"
+mzilli_graphical_culture.1.mam:0 "Mammalian Ships"
+mzilli_graphical_culture.1.mol:0 "Molluscoid Ships"
+mzilli_graphical_culture.1.nec:0 "Necroid Ships"
+mzilli_graphical_culture.1.pla:0 "Plantoid Ships"
+mzilli_graphical_culture.1.rep:0 "Reptilian Ships"
+mzilli_graphical_culture.1.lit:0 "Lithoid Ships"
+mzilli_graphical_culture.1.imp:0 "Imperial Ships"
+mzilli_graphical_culture.1.aqu:0 "Aquatic Ships"
+mzilli_graphical_culture.1.other:0 "§LModded Ships§!"
+
+mzilli_graphical_culture.2.desc:0 "§YIf you have a specific request for a shipset, please post it in the mod's comment section (along with a link).§!"

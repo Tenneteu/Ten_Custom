@@ -1,0 +1,203 @@
+decision_harvest_all_matter_for_planetary_printing = {
+	#owned_planets_only = no
+	icon = decision_harvest_matter_for_planetary_printing
+	enactment_time = 0
+	ai_weight = { weight = 0 }
+
+	potential = {
+		is_star = yes
+		space_owner = { is_ai = no }
+	}
+
+	resources = {
+		category = giga_kilostructures
+		cost = {
+			alloys = 20000
+			energy = 50000
+		}
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|military|RESOURCE|alloys|AMOUNT|20000| }
+	}
+
+	prerequisites = { giga_tech_planetary_matter_harvesting }
+
+	effect = {
+		custom_tooltip = "decision_build_all_planetary_matter_harvester"
+		hidden_effect = {
+			solar_system = {
+				every_system_planet = {
+					limit = {
+						NOR = {
+                            is_planet_class = pc_shielded
+                            is_planet_class = pc_gas_giant
+                            has_planet_flag = getting_harvested_for_printing
+                            has_planet_flag = megastructure
+                            has_planet_flag = has_megastructure
+                            has_planet_flag = holy_world_1
+                            has_planet_flag = holy_world_2
+                            has_planet_flag = holy_world_3
+                            has_planet_flag = holy_world_4
+                            has_planet_flag = machine_world_1
+                            has_planet_flag = machine_world_2
+                            has_planet_flag = machine_world_3
+                            has_planet_flag = machine_world_4
+                            has_planet_flag = paluushia
+                            has_planet_flag = corrona
+                            has_planet_flag = gigaflusion
+                            is_planet_class = pc_ai
+                            is_planet_class = pc_shrouded
+                            is_planet_class = pc_gigabrown_dwarf
+                            is_planet_class = pc_birch
+                            AND = {
+                                exists = space_owner
+                                space_owner = { is_ai = yes }
+                            }
+                            AND = {
+                                exists = owner
+                                OR = {
+                                    owner = { is_country_type = primitive }
+                                    owner = { is_country_type = frameworld_outpost_country_type }
+                                }
+                            }
+                        }
+                        is_star = no
+                        is_colony = no
+                        is_artificial = no
+                        giga_habitable_structure = no
+					}
+
+					from = {
+                        giga_ai_savings_withdraw = { CATEGORY = resource RESOURCE = alloys AMOUNT = 5000 }
+                    }
+                    set_planet_flag = getting_harvested_for_printing
+                    set_planet_flag = megastructure
+                    set_planet_flag = has_megastructure
+                    solar_system = {
+                        spawn_megastructure = {
+                            type = moon_printer_orbital_mass_harvester_0
+                            planet = PREV
+                            owner = ROOT.space_owner
+                        }
+                        space_owner = {
+                            every_owned_megastructure = {
+                                limit = {
+                                    is_megastructure_type = moon_printer_orbital_mass_harvester_0
+                                }
+                                upgrade_megastructure_to = moon_printer_orbital_mass_harvester_1
+                            }
+                        }
+                    }
+				}
+			}
+		}
+	}
+}
+
+ten_decision_fractured_self_detonation = {
+	icon = decision_planet_beam
+	resources = {
+		category = decisions
+		cost = {
+			influence = 250
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				owner = { is_same_value = root.owner }
+			}
+			influence = 500
+			unity = 50000
+		}
+		cost = {
+			trigger = {
+				NOT = {
+					owner = { is_same_value = root.owner }
+				}
+			}
+			influence = 250
+		}
+	}
+	sound = event_ai_started_01
+	potential = {
+		exists = space_owner
+		space_owner = { is_same_value = from }
+		from = {
+            is_ai = no
+			has_technology = tech_bombardment_ae_final
+		}
+		is_star = no
+		NOR = {
+			is_planet_class = pc_acot_pmc_vault
+		}
+		NOT = {
+			has_planet_flag = final_word_underway
+		}
+	}
+
+	allow = {
+	}
+
+	effect = {
+		hidden_effect = {
+			set_planet_flag = final_word_underway
+			save_event_target_as = showered_planet
+			space_owner = {
+				enable_special_project = {
+					name = ACOT_FINAL_WORD_PLANET
+					location = event_target:showered_planet
+					owner = this
+				}				
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+ten_decision_self_detonation = {
+	icon = decision_planet_beam
+	resources = {
+		category = decisions
+		cost = {
+			influence = 5
+		}
+	}
+	sound = event_ai_started_01
+	potential = {
+		exists = space_owner
+		space_owner = { is_same_value = from }
+		from = {
+            is_ai = no
+		}
+		is_star = no
+		NOR = {
+			is_planet_class = pc_acot_pmc_vault
+		}
+		NOT = {
+			has_planet_flag = final_word_underway
+			has_planet_flag = ten_final_word_underway
+		}
+	}
+
+	allow = {
+	}
+
+	effect = {
+		hidden_effect = {
+			set_planet_flag = ten_final_word_underway
+			save_event_target_as = ten_showered_planet
+			space_owner = {
+				enable_special_project = {
+					name = TEN_FINAL_WORD_PLANET
+					location = event_target:ten_showered_planet
+					owner = this
+				}				
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

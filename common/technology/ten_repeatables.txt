@@ -1,0 +1,56 @@
+giga_tech_repeatable_reduced_mega_building_time = {
+    area = engineering
+    cost = 100000
+    cost_per_level = 10000
+    tier = 5
+    category = {
+        industry
+    }
+    levels = 100
+    prerequisites = {
+        "tech_mega_engineering"
+    }
+    weight = 20
+    ai_weight = {
+        factor = 1
+    }
+    weight_groups = {
+        repeatable
+    }
+    mod_weight_if_group_picked = {
+        repeatable = 0.01
+    }
+    modifier = {
+        megastructure_build_speed_mult = 0.10
+    }
+}
+
+tech_repeatable_command_limit = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { military_theory }
+	levels = 40
+	prerequisites = { "tech_doctrine_fleet_size_5" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+
+	ai_weight = {
+		factor = 1.0
+	}
+
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		command_limit_add = 25
+	}
+}

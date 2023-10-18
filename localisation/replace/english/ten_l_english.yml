@@ -1,0 +1,12 @@
+﻿l_english:
+
+##################################################################################################################################################################################################################
+### ORIGINS ###
+################
+ origin_tier_five_start_effect: "Starts the game as a highly developed empire with access to all basic Tier-5 technologies and large amounts of fleets.\n\n§RNOT BALANCED FOR MULTIPLAYER§!"
+ origin_tier_dm_start_effect: "Starts the game as a powerful empire with access to all tier-6 and enigmatic-based technologies and a huge number of fleets.\n\n§RNOT BALANCED FOR MULTIPLAYER§!"
+ origin_acot_fe_rebel_effect: "Starts the game as a powerful empire with access to most tier-6 technologies. You are immediately at war with a Fallen Empire and must escort your fleets back to your more defensible starting location. A group of fallen rebels will cover your escape, but time is short!\n\n§RNOT BALANCED FOR MULTIPLAYER§!"
+ origin_birch_effects:0 "You will start on a $pc_birch$ isolated at the Galactic Core.\nBecause this requires spawning the core after galaxy generation you will actually move there just before game start, so will maintain the knowledge of your original home cluster.\n\nThe $pc_birch$ was designed for a much larger population, so you will need to do some job management at the start to survive.\n\n§RAI cannot use this origin. Any generated predefined custom AI empires with this origin will be generate with $origin_default$ instead.§!\n\n§RNOT BALANCED FOR MULTIPLAYER§!"
+
+ origin_playable_oe_effects: "Start the game as a Stellarborne with the Throne of Immaculate.\nGain access to the Light, which can be used to alter the galaxy.\n\n\n§RNOT BALANCED FOR MULTIPLAYER (Cheat Oring?)§!"
+ origin_playable_oe_singular_effects: "Start the game as a Stellarborne with a Worldsphere.\nGain access to the Light, which can be used to alter the galaxy.\n\n\n§RNOT BALANCED FOR MULTIPLAYER (Cheat Oring?)§!"

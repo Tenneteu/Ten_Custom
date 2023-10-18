@@ -1,0 +1,30 @@
+@start_resources_cap_boost_1 = 50000
+@start_resources_cap_boost_2 = 50000
+@start_resources_cap_boost_3 = 50000
+
+@start_resources_monthly_boost_1 = 100
+@start_resources_monthly_boost_2 = 100
+@start_resources_monthly_boost_3 = 100
+
+ten_sm_start_boost_1 = {
+    country_resource_max_add = @start_resources_cap_boost_1
+    country_base_energy_produces_add = @start_resources_monthly_boost_1
+    country_base_minerals_produces_add = @start_resources_monthly_boost_1
+    country_base_food_produces_add = @start_resources_monthly_boost_1
+    country_base_alloys_produces_add = @start_resources_monthly_boost_1
+    country_base_consumer_goods_produces_add = @start_resources_monthly_boost_1
+    country_base_unity_produces_add = @start_resources_monthly_boost_1
+
+    country_base_physics_research_produces_add = @start_resources_monthly_boost_1
+    country_base_society_research_produces_add = @start_resources_monthly_boost_1
+    country_base_engineering_research_produces_add = @start_resources_monthly_boost_1
+}
+
+TEN_AAR_mod_ship_HOSTILE_territory = {
+	#ship_hull_regen_add_perc = 0.08	# |3.4|回复无视受伤
+	#ship_armor_regen_add_perc = 0.08
+	#ship_shield_regen_add_perc = 0.12
+	ship_hull_regen_add_static = 999	# |3.4|回复无视受伤
+	ship_armor_regen_add_static = 999
+	ship_shield_regen_add_static = 999
+}

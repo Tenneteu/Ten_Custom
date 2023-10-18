@@ -1,0 +1,275 @@
+﻿l_english:
+edict_architectonic_base:0 "Architectonic Mastery I"
+edict_architectonic_base_desc:0 "We invest some power to improve our planetary architecture in a minor way. Nice, more space!"
+edict_architectonic_med:0 "Architectonic Mastery II"
+edict_architectonic_med_desc:0 "We invest power to improve our planetary architecture moderatly. We need even more space to build!"
+edict_architectonic_max:0 "Architectonic Mastery III"
+edict_architectonic_max_desc:0 "We invest tremendous amounts of power to improve our planetary architecture massively. WE NEED TONS OF MORE SPACE!"
+
+ION_CANNON_ZERO_POINT_REACTOR:0 "ION Cannon Zero Point Reactor"
+ION_CANNON_DARK_MATTER_REACTOR:0 "ION Cannon Dark Matter Reactor"
+
+xl_cannon:0 "Annihilator Cannon"
+xl_cannon_plural:0 "Annihilator Cannons"
+
+#Ten
+mod_shipsize_military_station_medium_build_speed_mult:0 "(NSC) Defense Station Build Speed"
+mod_shipsize_military_station_large_build_speed_mult:0 "(NSC) Defense Fortress Build Speed"
+shipsize_ion_cannon_build_speed_mult:0 "ION Cannon Build Speed"
+shipsize_xl_cannon_build_speed_mult:0 "XL Cannon Build Speed"
+edict_ten_emergency_defenses:0 "Ten Emergency Defenses v2"
+edict_ten_emergency_defenses_desc:0 "Close to cheating but not yet(?)"
+edict_ten_emergency_defenses_cheat:0 "Ten Emergency Defenses v9999"
+edict_ten_emergency_defenses_cheat_desc:0 "Close to cheating but not yet(?) No, it's cheating. To be precise... IT'S OVER 9000!!!!"
+edict_ten_edict_army:0 "Ten Army Balance"
+edict_ten_edict_army_desc:0 "AI builds Army with all his planets, as human we usually don't - so this makes it easier to keep up"
+ 
+edict_str_custom_menu:0 "StarTech Menu"
+edict_str_custom_menu_desc:0 "Opens StarTech Menu to customize Peace time etc..."
+ 
+edict_ten_giga_fix:0 "§RDANGEROUS Fix for broken GIGA Event line§!"
+edict_ten_giga_fix_desc:0 "§RONLY USE WHEN YOU KNOW WHAT YOU ARE DOING!§!"
+
+ten_decision_fractured_self_detonation: "[Ten] Final Word Protocol"
+ten_decision_fractured_self_detonation_desc: "[Ten] Issues Final Word Protocol on the selected planet. Terraforming Equipments will be prepped, allowing us to prepare to fracture or melt the planet."
+ 
+ten_decision_fractured_self_detonation_effect: "[Ten] A Special Project will be added to shower the planet.\n\nTransforming owned planets will cost more influences and extra unity. Transforming an existing fractured world into ultrafractured world will be cheaper than other types of worlds."
+ 
+##################################################################################################################################################################################################################
+### POLICIES ###
+################
+
+policy_tech_options_policy:0 "Research Diversity Initiative"
+policy_tech_options_policy_desc:0 "Research Diversity Initiative"
+
+defaulttech_option_name: "Default Research"
+ defaulttech_option:0 "Default Research"
+ defaulttech_option_desc:0 "This option will keep the research alternatives at the normal number - nothing will change."
+
+tech5_option_name: "Research Initiative 5"
+ tech5_option:0 "Research Initiative 5"
+ tech5_option_desc:0 "This option will increase the number of research alternatives to 5 and will cost approximately 10% of our monthly research production."
+
+tech10_option_name: "Research Initiative 10"
+ tech10_option:0 "Research Initiative 10"
+ tech10_option_desc:0 "This option will increase the number of research alternatives to 10 and will cost approximately 15% of our monthly research production."
+
+tech15_option_name: "Research Initiative 15"
+ tech15_option:0 "Research Initiative 15"
+ tech15_option_desc:0 "This option will increase the number of research alternatives to 15 and will cost approximately 20% of our monthly research production."
+
+tech20_option_name: "Research Initiative 20"
+ tech20_option:0 "Research Initiative 20"
+ tech20_option_desc:0 "This option will increase the number of research alternatives to 20 and will cost approximately 30% of our monthly research production."
+  
+
+
+policy_overflow_hull_options_policy:0 "Hull Overflow Fix"
+policy_overflow_hull_options_policy_desc:0 "Hull Overflow Fix"
+
+overflow_hull_default_option_name: "Default Hull Regeneration"
+ overflow_hull_default_option:0 "Default Regeneration"
+ overflow_hull_default_option_desc:0 "This won't change the Regeneration."
+
+overflow_hull_010_option_name: "Adjusted Hull Regeneration 1"
+ overflow_hull_010_option:0 "Adjusted Hull Regeneration 1"
+ overflow_hull_010_option_desc:0 "Adjusted Hull Regeneration 1"
+
+overflow_hull_020_option_name: "Adjusted Hull Regeneration 1"
+ overflow_hull_020_option:0 "Adjusted Hull Regeneration 1"
+ overflow_hull_020_option_desc:0 "Adjusted Hull Regeneration 1"
+
+overflow_hull_050_option_name: "Adjusted Hull Regeneration 1"
+ overflow_hull_050_option:0 "Adjusted Hull Regeneration 1"
+ overflow_hull_050_option_desc:0 "Adjusted Hull Regeneration 1"
+
+overflow_hull_075_option_name: "Adjusted Hull Regeneration 1"
+ overflow_hull_075_option:0 "Adjusted Hull Regeneration 1"
+ overflow_hull_075_option_desc:0 "Adjusted Hull Regeneration 1"
+
+overflow_hull_100_option_name: "Adjusted Hull Regeneration 1"
+ overflow_hull_100_option:0 "Adjusted Hull Regeneration 1"
+ overflow_hull_100_option_desc:0 "Adjusted Hull Regeneration 1"
+
+overflow_hull_150_option_name: "Adjusted Hull Regeneration 1"
+ overflow_hull_150_option:0 "Adjusted Hull Regeneration 1"
+ overflow_hull_150_option_desc:0 "Adjusted Hull Regeneration 1"
+
+
+policy_overflow_armor_options_policy:0 "Armor Overflow Fix"
+policy_overflow_armor_options_policy_desc:0 "Armor Overflow Fix"
+
+overflow_armor_default_option_name: "Default Armor Regeneration"
+ overflow_armor_default_option:0 "Default Regeneration"
+ overflow_armor_default_option_desc:0 "This won't change the Regeneration."
+
+overflow_armor_010_option_name: "Adjusted Armor Regeneration 1"
+ overflow_armor_010_option:0 "Adjusted Armor Regeneration 1"
+ overflow_armor_010_option_desc:0 "Adjusted Armor Regeneration 1"
+
+overflow_armor_020_option_name: "Adjusted Armor Regeneration 1"
+ overflow_armor_020_option:0 "Adjusted Armor Regeneration 1"
+ overflow_armor_020_option_desc:0 "Adjusted Armor Regeneration 1"
+
+overflow_armor_050_option_name: "Adjusted Armor Regeneration 1"
+ overflow_armor_050_option:0 "Adjusted Armor Regeneration 1"
+ overflow_armor_050_option_desc:0 "Adjusted Armor Regeneration 1"
+
+overflow_armor_075_option_name: "Adjusted Armor Regeneration 1"
+ overflow_armor_075_option:0 "Adjusted Armor Regeneration 1"
+ overflow_armor_075_option_desc:0 "Adjusted Armor Regeneration 1"
+
+overflow_armor_100_option_name: "Adjusted Armor Regeneration 1"
+ overflow_armor_100_option:0 "Adjusted Armor Regeneration 1"
+ overflow_armor_100_option_desc:0 "Adjusted Armor Regeneration 1"
+
+overflow_armor_150_option_name: "Adjusted Armor Regeneration 1"
+ overflow_armor_150_option:0 "Adjusted Armor Regeneration 1"
+ overflow_armor_150_option_desc:0 "Adjusted Armor Regeneration 1"
+
+
+policy_overflow_shield_options_policy:0 "Shield Overflow Fix"
+policy_overflow_shield_options_policy_desc:0 "Shield Overflow Fix"
+
+overflow_shield_default_option_name: "Default Shield Regeneration"
+ overflow_shield_default_option:0 "Default Regeneration"
+ overflow_shield_default_option_desc:0 "This won't change the Regeneration."
+
+overflow_shield_010_option_name: "Adjusted Shield Regeneration 1"
+ overflow_shield_010_option:0 "Adjusted Shield Regeneration 1"
+ overflow_shield_010_option_desc:0 "Adjusted Shield Regeneration 1"
+
+overflow_shield_020_option_name: "Adjusted Shield Regeneration 1"
+ overflow_shield_020_option:0 "Adjusted Shield Regeneration 1"
+ overflow_shield_020_option_desc:0 "Adjusted Shield Regeneration 1"
+
+overflow_shield_050_option_name: "Adjusted Shield Regeneration 1"
+ overflow_shield_050_option:0 "Adjusted Shield Regeneration 1"
+ overflow_shield_050_option_desc:0 "Adjusted Shield Regeneration 1"
+
+overflow_shield_075_option_name: "Adjusted Shield Regeneration 1"
+ overflow_shield_075_option:0 "Adjusted Shield Regeneration 1"
+ overflow_shield_075_option_desc:0 "Adjusted Shield Regeneration 1"
+
+overflow_shield_100_option_name: "Adjusted Shield Regeneration 1"
+ overflow_shield_100_option:0 "Adjusted Shield Regeneration 1"
+ overflow_shield_100_option_desc:0 "Adjusted Shield Regeneration 1"
+
+overflow_shield_150_option_name: "Adjusted Shield Regeneration 1"
+ overflow_shield_150_option:0 "Adjusted Shield Regeneration 1"
+ overflow_shield_150_option_desc:0 "Adjusted Shield Regeneration 1"
+
+##################################################################################################################################################################################################################
+### DECISIONS ###
+################
+                     
+ decision_decision_anti_horror:0 "§RONLY needed when facing planet beeing turned into Black Hole Event§!"
+ decision_decision_anti_horror_desc:1 "Allows us to change the outcome."
+ decision_decision_anti_horror_tooltip:0 "$decision_decision_anti_horror_desc$"
+                                  
+ decision_harvest_all_matter_for_planetary_printing:0 "Harvest ALL £sr_solar_energy£ §YPlanetary Mass§!"
+ decision_harvest_all_matter_for_planetary_printing_desc:0 "Some planets serve simply no purpose, they will be more useful if we completely dismantle them for materials."
+ 
+ decision_build_all_planetary_matter_harvester:0 "This will begin the construction of §YPlanetary Matter Harvester§! in orbit of ALL uninhabited telluric worlds.\nOnce complete, these powerful megastructures will steadily harvest one £sr_solar_energy£ §YPlanetary Mass§! every §Ysix months§!, shrinking the planet's size by one every time it does so. When the planet's size drops below 1, it will §Rdisappear§!. The harvesting megastructure has a §Ymonthly upkeep§! of 50 £energy£\n\n§RThe Planetary Matter Harvester§! cannot be stopped once started!§!"
+                                  
+ decision_check_awesome:0 "§YTen check missing base buildings§! (§BMax§! Template)"
+ decision_check_awesome_desc:0 "Information is a weapon, and a few words can blow a hurricane."
+
+ten_game_start_boost.name: "Ten Overhaul - Start Boost"
+ten_game_start_boost.desc: "Will provide a Start Boost of each resources and each research (doubles research speed as long as there are stored research available)"
+ten_game_start_boost_10.desc: "...Start Boost for: AI & Players"
+ten_game_start_boost_11.desc: "...Start Boost for: AI & Players"
+ten_game_start_boost_12.desc: "...Start Boost for: AI & Players"
+
+ten_game_start_boost_1_option_1.desc: "No Start Boost"
+ten_game_start_boost_1_option_2.desc: "For AI & Players"
+ten_game_start_boost_1_option_3.desc: "For Players Only"
+ten_game_start_boost_1_option_4.desc: "For AI Only"
+
+ten_game_start_boost_1x_option_1.desc: "50k Resources & 1kk Research & 1k Influence"
+ten_game_start_boost_1x_option_2.desc: "50k Resources & 100k Research & 1k Influence"
+ten_game_start_boost_1x_option_3.desc: "5k Resources & 0 Research & 0 Influence"
+
+ten_game_start_boost_option_back.desc: "Back"
+
+
+ten_game_start_boost_option_1.desc: "Start Boost of ~50k each for AI & Players (recommended)"
+ten_game_start_boost_option_2.desc: "Start Boost of ~50k each ONLY for Players"
+
+##################################################################################################################################################################################################################
+### STATIC MODIFIERS ###
+################
+ten_sm_start_boost_1:0 "Ten Boosted Start Income"
+ ten_sm_start_boost_1_desc:0 "We receive a monthly boost to our economy."
+
+
+
+ACOT_EMISSART_EXTRA_MAX: "Auto-Max Nano Core"
+ACOT_EMISSART_EXTRA_MAX_DESC: "A specialized Nano Core that can be deployed alongside the Emissary to immediately construct Max's favourite buildings.\n\n§RDoes not stack with each other, only one module of the same type will apply.§!"
+
+ACOT_EMISSART_EXTRA_MARC: "Auto-Marc Nano Core"
+ACOT_EMISSART_EXTRA_MARC_DESC: "A specialized Nano Core that can be deployed alongside the Emissary to immediately construct Marc's favourite buildings.\n\n§RDoes not stack with each other, only one module of the same type will apply.§!"
+
+
+### System Killer
+
+ is_not_a_star:0 "§R$TRIGGER_FAIL$Target is not a Star§!"
+
+ TEN_SYSTEM_KILLER_NEUTRON: "§RHeavenly§! Neutron Solarstorm"
+ TEN_SYSTEM_KILLER_NEUTRON_ACTION: "Solarflare"
+ TEN_SYSTEM_KILLER_NEUTRON_DESC: "Ignite the Star to invoke an artificial solarstorm, sweeping the system and all it's planets.\n\n§YDestroys all colonies/pops but leaves infrastructure intact§!"
+
+FLEETORDER_DESTROY_PLANET_WITH_TEN_SYSTEM_KILLER_NEUTRON:0 "Preparing to solarflare the star $PLANET|Y$"
+
+ TEN_SYSTEM_KILLER_NANOBOT: "§RHeavenly§! solarpowered Nanobots"
+ TEN_SYSTEM_KILLER_NANOBOT_ACTION: "Solarbots"
+ TEN_SYSTEM_KILLER_NANOBOT_DESC: "Ignite the Star to invoke an artificial solarbotstorm, sweeping the system and all it's planets.\n\n§YAssimilates all colonies/pops§!"
+
+FLEETORDER_DESTROY_PLANET_WITH_TEN_SYSTEM_KILLER_NEUTRON:0 "Preparing to solarbot the star $PLANET|Y$"
+
+### Components
+
+TEN_NO_REPAIR_COUNTERMEASURES_DM: "Ten Delta Reactive Countermeasure Drones"
+TEN_NO_REPAIR_COUNTERMEASURES_DM_DESC: "Reactive Countermeasure Drones or RCD, are a new type of automated drones that have two functions. Repairing the ship's armor when out of combat and acts as countermeasures by absorbing damage from incoming attack in place of the ship."
+
+TEN_NO_REPAIR_COUNTERMEASURES_AE: "Ten Alpha Reactive Countermeasure Drones"
+TEN_NO_REPAIR_COUNTERMEASURES_AE_DESC: "The Alpha-Class Reactive Countermeasure Drones provide higher armor resistances at the cost of repair capabilities."
+
+TEN_NEG_REPAIR_COUNTERMEASURES_AE: "Ten Alpha Reactive Countermeasure Drones 2"
+TEN_NEG_REPAIR_COUNTERMEASURES_AE_DESC: "The Alpha-Class Reactive Countermeasure Drones provide higher armor resistances at the cost of repair capabilities."
+
+TEN_NO_REPAIR_COUNTERMEASURES_OE: "Ten Omega Reactive Countermeasure Drones"
+TEN_NO_REPAIR_COUNTERMEASURES_OE_DESC: "The most sophisticated and durable of all UMDs, the Omega-Class provides the best protection, deterrances and maintenance. Their services will be honored in the archives of our empire."
+
+TEN_NO_REPAIR_COUNTERMEASURES_SE: "Ten Sigma Reactive Countermeasure Drones"
+TEN_NO_REPAIR_COUNTERMEASURES_SE_DESC: "More sophisticated and durable than the Alpha-Generation drones, the Sigma-Class provides better protection, deterrances and maintenance."
+
+TEN_NO_REPAIR_COUNTERMEASURES_PE: "Ten Phi Reactive Countermeasures"
+TEN_NO_REPAIR_COUNTERMEASURES_PE_DESC: "Phi Reactive Countermeasures"
+
+TEN_NO_REPAIR_COUNTERMEASURES_RE: "Ten Phanon Reactive Countermeasures"
+TEN_NO_REPAIR_COUNTERMEASURES_RE_DESC: "Phanon Reactive Countermeasures"
+
+
+### Destroy Planet
+
+
+TEN_FINAL_WORD_PLANET: "Final Word on [FromFrom.GetName]"
+TEN_FINAL_WORD_PLANET_DESC: "By order of our great empire, the world of [FromFrom.GetName] is sentenced to Final Word Protocol. Planetside Terraforming Ships are standing by for duty.\n\nIf the timer run outs, half of the influence costs will be refunded."
+
+ten_decision_fractured_self_detonation: "[Ten] Self Destruct Protocol"
+ten_decision_fractured_self_detonation_desc: "[Ten] Issues Self Destruct Protocol on the selected planet. Terraforming Equipments will be prepped, allowing us to prepare to fracture or melt the planet."
+ 
+ten_decision_fractured_self_detonation_effect: "[Ten] A Special Project will be added to shower the planet.\n\nTransforming owned planets will cost more influences and extra unity. Transforming an existing fractured world into ultrafractured world will be cheaper than other types of worlds."
+
+
+ten_destroy_planet.1003.name: "Self Destruct Warhead Deployment Ready on [event_target:ten_showered_planet.GetName]"
+ten_destroy_planet.1003.desc: "Our admirals are pleased to report that the Self Destruct Protocol on §H[event_target:showered_planet.GetName]§! is ready. Standing by for final confirmation."
+ten_destroy_planet.1003.a: "Purge the world into flames. Let none survive."
+ten_destroy_planet.1003.a.explain: "Use standard payload to turns the planet into a tomb world and gain 500 Unity for each purged Pop."
+ten_destroy_planet.1003.b: "Engage Delta Protocol. Let the cleansing begins."
+ten_destroy_planet.1003.b.explain: "[event_target:ten_showered_planet.GetName] destroy the colony, cleansing all pops and buildings."
+ten_destroy_planet.1003.c: "Engage Alpha Protocol. Full power."
+ten_destroy_planet.1003.c.explain: "[event_target:ten_showered_planet.GetName] turns into Ultrafractured World"
+ten_destroy_planet.1003.d: "Cancel Self Destruct Protocol."
+ten_destroy_planet.1003.d.explain: "[event_target:ten_showered_planet.GetName] remains whatever it is." 
