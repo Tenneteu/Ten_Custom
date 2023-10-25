@@ -1,0 +1,23 @@
+country_edict = {
+	name = "Change_Ethics_0"
+	modifier = { }
+	
+	influence_cost = 0
+
+	potential = {
+		not = { has_country_flag = changed_ethics }
+	}
+		
+	allow = {
+	#	not = { has_country_flag = changed_ethics }
+	}
+	
+	effect = {
+		set_timed_country_flag = { flag = changed_ethics days = 3 }
+		country_event = { id = change_ethics.1 }
+	}
+	
+	ai_weight = {
+		weight = 0		
+	}	
+}

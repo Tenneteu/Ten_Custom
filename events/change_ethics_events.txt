@@ -1,0 +1,305 @@
+namespace = change_ethics
+
+## menu
+country_event = {
+	id = change_ethics.1
+	title = "change_ethics.1.name"
+	desc = "change_ethics.1.desc"
+	picture = GFX_evt_galactic_senate
+	is_triggered_only = yes
+	
+	option = {
+		name = "change_ethics_1"
+		trigger = {
+		}
+		custom_tooltip = change_ethics_1.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.2 } #Authoritarian-Egalitarian
+		}
+	}
+	option = {
+		name = "change_ethics_2"
+		custom_tooltip = change_ethics_2.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.3 } #Xenophobe-Xenophile
+		}
+	}
+	option = {
+		name = "change_ethics_3"
+		custom_tooltip = change_ethics_3.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.4 } #Militalist-Pacifist
+		}
+	}
+	option = {
+		name = "change_ethics_4"
+		custom_tooltip = change_ethics_4.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.5 } #Materialist-Spiritualist
+		}
+	}
+	option = {
+		name = "change_ethics_5" #remove all ehics
+		custom_tooltip = change_ethics_5.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_remove_ethic = ethic_fanatic_authoritarian
+			country_remove_ethic = ethic_authoritarian
+			country_remove_ethic = ethic_egalitarian
+			country_remove_ethic = ethic_fanatic_egalitarian
+			country_remove_ethic = ethic_fanatic_xenophobe
+			country_remove_ethic = ethic_xenophobe
+			country_remove_ethic = ethic_xenophile
+			country_remove_ethic = ethic_fanatic_xenophile
+			country_remove_ethic = ethic_fanatic_militarist
+			country_remove_ethic = ethic_militarist
+			country_remove_ethic = ethic_pacifist
+			country_remove_ethic = ethic_fanatic_pacifist
+			country_remove_ethic = ethic_fanatic_materialist
+			country_remove_ethic = ethic_materialist
+			country_remove_ethic = ethic_spiritualist
+			country_remove_ethic = ethic_fanatic_spiritualist
+		}
+		
+	}
+	option = {
+		name = "change_ethics_exit"
+	}
+}
+
+#C vs I
+country_event = {
+	id = change_ethics.2
+	title = "change_ethics.2.name"
+	desc = "change_ethics.2.desc"
+	picture = GFX_evt_galactic_senate
+	is_triggered_only = yes
+	
+	option = {
+		name = "cvsi_1" #become fanatic authoritarian
+		custom_tooltip = cvsi_1.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_add_ethic = ethic_fanatic_authoritarian
+			country_remove_ethic = ethic_authoritarian
+			country_remove_ethic = ethic_egalitarian
+			country_remove_ethic = ethic_fanatic_egalitarian
+		}
+	}
+	option = {
+		name = "cvsi_2" #become authoritarian
+		custom_tooltip = cvsi_2.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_remove_ethic = ethic_fanatic_authoritarian
+			country_add_ethic = ethic_authoritarian
+			country_remove_ethic = ethic_egalitarian
+			country_remove_ethic = ethic_fanatic_egalitarian
+		}
+	}
+	option = {
+		name = "cvsi_3" #become egalitarian
+		custom_tooltip = cvsi_3.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_remove_ethic = ethic_fanatic_authoritarian
+			country_remove_ethic = ethic_authoritarian
+			country_add_ethic = ethic_egalitarian
+			country_remove_ethic = ethic_fanatic_egalitarian
+		}
+	}
+	option = {
+		name = "cvsi_4" #become fanatic egalitarian
+		custom_tooltip = cvsi_4.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_remove_ethic = ethic_fanatic_authoritarian
+			country_remove_ethic = ethic_authoritarian
+			country_remove_ethic = ethic_egalitarian
+			country_add_ethic = ethic_fanatic_egalitarian
+		}
+	}
+	option = {
+		name = "cvsi_exit"
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+		}
+	}
+}
+#X vs X
+country_event = {
+	id = change_ethics.3
+	title = "change_ethics.3.name"
+	desc = "change_ethics.3.desc"
+	picture = GFX_evt_galactic_senate
+	is_triggered_only = yes
+	
+	option = {
+		name = "xvsx_1" #become fanatic xenophobe
+		custom_tooltip = xvsx_1.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_add_ethic = ethic_fanatic_xenophobe
+			country_remove_ethic = ethic_xenophobe
+			country_remove_ethic = ethic_xenophile
+			country_remove_ethic = ethic_fanatic_xenophile
+		}
+	}
+	option = {
+		name = "xvsx_2" #become xenophobe
+		custom_tooltip = xvsx_2.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_remove_ethic = ethic_fanatic_xenophobe
+			country_add_ethic = ethic_xenophobe
+			country_remove_ethic = ethic_xenophile
+			country_remove_ethic = ethic_fanatic_xenophile
+		}
+	}
+	option = {
+		name = "xvsx_3" #become xenophile
+		custom_tooltip = xvsx_3.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_remove_ethic = ethic_fanatic_xenophobe
+			country_remove_ethic = ethic_xenophobe
+			country_add_ethic = ethic_xenophile
+			country_remove_ethic = ethic_fanatic_xenophile
+		}
+	}
+	option = {
+		name = "xvsx_4" #become fanatic xenophile
+		custom_tooltip = xvsx_4.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_remove_ethic = ethic_fanatic_xenophobe
+			country_remove_ethic = ethic_xenophobe
+			country_remove_ethic = ethic_xenophile
+			country_add_ethic = ethic_fanatic_xenophile
+		}
+	}
+	option = {
+		name = "xvsx_exit"
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+		}
+	}
+}
+#M vs P
+country_event = {
+	id = change_ethics.4
+	title = "change_ethics.4.name"
+	desc = "change_ethics.4.desc"
+	picture = GFX_evt_galactic_senate
+	is_triggered_only = yes
+	
+	option = {
+		name = "mvsp_1" #become fanatic militarist
+		custom_tooltip = mvsp_1.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_add_ethic = ethic_fanatic_militarist
+			country_remove_ethic = ethic_militarist
+			country_remove_ethic = ethic_pacifist
+			country_remove_ethic = ethic_fanatic_pacifist
+		}
+	}
+	option = {
+		name = "mvsp_2" #become militarist
+		custom_tooltip = mvsp_2.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_remove_ethic = ethic_fanatic_militarist
+			country_add_ethic = ethic_militarist
+			country_remove_ethic = ethic_pacifist
+			country_remove_ethic = ethic_fanatic_pacifist
+		}
+	}
+	option = {
+		name = "mvsp_3" #become pacifist
+		custom_tooltip = mvsp_3.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_remove_ethic = ethic_fanatic_militarist
+			country_remove_ethic = ethic_militarist
+			country_add_ethic = ethic_pacifist
+			country_remove_ethic = ethic_fanatic_pacifist
+		}
+	}
+	option = {
+		name = "mvsp_4" #become fanatic pacifist
+		custom_tooltip = mvsp_4.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_remove_ethic = ethic_fanatic_militarist
+			country_remove_ethic = ethic_militarist
+			country_remove_ethic = ethic_pacifist
+			country_add_ethic = ethic_fanatic_pacifist
+		}
+	}
+	option = {
+		name = "mvsp_exit"
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+		}
+	}
+}
+#M vs S
+country_event = {
+	id = change_ethics.5
+	title = "change_ethics.5.name"
+	desc = "change_ethics.5.desc"
+	picture = GFX_evt_galactic_senate
+	is_triggered_only = yes
+	
+	option = {
+		name = "mvss_1" #become fanatic materialist
+		custom_tooltip = mvss_1.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_add_ethic = ethic_fanatic_materialist
+			country_remove_ethic = ethic_materialist
+			country_remove_ethic = ethic_spiritualist
+			country_remove_ethic = ethic_fanatic_spiritualist
+		}
+	}
+	option = {
+		name = "mvss_2" #become materialist
+		custom_tooltip = mvss_2.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_remove_ethic = ethic_fanatic_materialist
+			country_add_ethic = ethic_materialist
+			country_remove_ethic = ethic_spiritualist
+			country_remove_ethic = ethic_fanatic_spiritualist
+		}
+	}
+	option = {
+		name = "mvss_3" #become spiritualist
+		custom_tooltip = mvss_3.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_remove_ethic = ethic_fanatic_materialist
+			country_remove_ethic = ethic_materialist
+			country_add_ethic = ethic_spiritualist
+			country_remove_ethic = ethic_fanatic_spiritualist
+		}
+	}
+	option = {
+		name = "mvss_4" #become fanatic spiritualist
+		custom_tooltip = mvss_4.tooltip
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+			country_remove_ethic = ethic_fanatic_materialist
+			country_remove_ethic = ethic_materialist
+			country_remove_ethic = ethic_spiritualist
+			country_add_ethic = ethic_fanatic_spiritualist
+		}
+	}
+	option = {
+		name = "mvss_exit"
+		hidden_effect = {
+			country_event = { id = change_ethics.1 }
+		}
+	}
+}
